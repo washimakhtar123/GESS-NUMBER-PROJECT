@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GESS_NUMBER</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- secton 1 button -->
+    <div id="section1" class="container text-center mt-5">
+        <button onclick="generate_number_btn_click()" class="btn btn-warning btn-lg">Generate Number</button>
+    </div>
+
+
+    <!-- secton 2 gess number, img message input check -->
+
+    <div class="container" id="section2">
+        <div class="row mt-2" >
+            <div class="col-12 text-center">
+               <img src="https://cdn.pixabay.com/animation/2023/01/07/11/02/11-02-30-972_512.gif" alt="df" width="100px"> 
+               <P class="text-danger">Guess the number 1 to*** 6</P>
+               <div class="form-group">
+                <input id="field" type="number"  class="from-control"  placeholder="Enter here the Number">
+               </div>
+               <button  onclick="check_Number()" class="btn btn-primary btn-sm mt-4">
+                Check</button>
+               
+            </div>
+        </div>
+    </div>
+
+    <!-- secton 3 img heading gnrating number -->
+
+    <div class="container text-center mt-4" id="section3">
+        <img class="img-fluid" src="https://i.makeagif.com/media/7-30-2014/gqb5oK.gif" alt="" width="250px">
+        <h3>Generating number....</h3>
+    </div>
+
+
+ <script src="index.js"></script>   
+</body>
+</html>
